@@ -1,0 +1,175 @@
+:root
+{
+
+    /* - Family: [Josefin Sans] */
+    --family:'Josefin Sans';
+
+    /* Colors */
+
+    /* Primary */
+
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+
+     /* Neutral */
+
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+ /* Gradients */
+
+/* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+
+}
+
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+
+    font-family: var(--family);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; */
+
+}
+
+main
+{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin: 0em auto;
+    max-width: 100%;
+
+}
+
+
+
+.logo{
+
+    margin: 1em 1em 0 1em; 
+}
+
+.hero{
+
+    width: 100%;
+}
+
+.hero img{
+
+    width: 100%;
+}
+
+.info-container{
+
+    text-align: center;
+     max-width: 78%;
+     margin: auto;
+}
+
+.info-container p:nth-of-type(1){
+
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+   
+}
+
+.info-container p:nth-of-type(1) span{
+
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+
+.info-container p:nth-of-type(2){
+
+    color: var(--Desaturated-Red);
+    line-height: 100%;
+    margin: revert;
+}
+
+form{
+    display: flex;
+    align-items: center;
+
+}
+form input{
+
+    border: 1px solid var(--Desaturated-Red);
+    width: 100%;
+    padding: 1em;
+    border-radius:40px;
+}
+
+form button{
+
+    border: none;
+    background-color: var(--Desaturated-Red);
+    padding: 0.8em 23px;
+    border-radius: 3em;
+    margin-left: -58px;
+}
+
+
+@media(min-width:668px){
+
+main{
+
+    max-width: 75%;
+}
+
+
+
+
+
+}
+
+@media(min-width:992px)
+{
+
+    
+
+
+main{
+
+grid-template-columns: 1fr 1fr;
+grid-template-rows: repeat(6,1fr);
+
+}
+
+.logo{
+
+    grid-row: 2/3;
+    margin: 0;
+}
+
+.hero{
+    
+    grid-row: 1/7;
+}
+
+.hero img{
+
+    width: 100%;
+}
+
+
+.info-container
+{
+    text-align: left;
+    grid-row: 3/7;
+}
+
+
+}
